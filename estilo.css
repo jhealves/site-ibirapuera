@@ -1,0 +1,206 @@
+@import url ('https://fonts.googleapis.com/css?family=Lagosta');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+body{
+	margin:0px;
+	padding:0px;
+	background: #BBDEFB;
+}
+#wrap{
+	width: 960px;
+	margin: auto; 	
+}
+a{
+	text-align: center;
+	font-size: 20px;
+	font-family: arial bold;
+	color: #0B6121;
+	text-decoration:none;
+}	
+.header{
+	background: linear-gradient(225deg, #0B6121 30%, #FFFF00 95%);
+	width: 960px;
+	height: 250px;
+	border-radius: 10px;
+}
+.logo{
+	display: inline-block;
+	margin:10px 0 5px 0;
+	padding-bottom:0px;
+	padding-top:0px;
+	margin-left: 39.5%;
+}
+.menu{
+	background: #00a695;
+	width: 960px;
+  	height: 85px;
+  	border-radius: 0px 0px 10px 10px;
+}
+.menu ul{
+	overflow: hidden;
+	margin: 0 auto;
+	padding-top: 20px;
+	list-style: none;
+}
+.menu ul li{
+	float: left;
+	display: inline-block;
+	margin-right: 4%;
+	transition: background-color: 1s;
+	text-align: center;
+}
+.menu ul li a{
+	text-decoration:none;
+	display: block;
+	padding: 0;
+	font-family: 'Anton', sans-serif;
+	font-size: 25px;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-shadow: 1px 1px black;
+}	
+.menu a:hover{	
+	background: #0B6121;
+	border-radius: 10px;
+	padding: 0px 2px 0px 2px;
+}
+.destaque{
+	overflow: hidden;
+	margin: 80px 0 25px 0;
+	border: 2px solid #0B6121;
+	border-radius: 10px;
+	width: 960px;
+	height: 360px;
+}
+.destaque.imagem{
+	position: relative;
+	float: left;	
+}
+.conteudo{
+	overflow: hidden;
+	margin: 30px 0 0 0;		
+}
+
+.conteudo h1{
+	font-size: 24px;
+	font-family: arial bold;
+	text-align: center;
+	color: #0B6121;
+	text-shadow: 2px 5px 4px #000;
+	text-transform: uppercase;
+
+}
+.conteudo h2{
+	font-size: 20px;
+	font-family: arial bold;
+	color: #00a695;
+	font-weight: bold;
+}
+.conteudo p{
+	font-size: 16px;
+	font-family: verdana bold;
+	font-style: italic;
+	color: #000000;
+	text-align: justify;
+	letter-spacing: 1px;
+}
+.conteudo img{
+	border-radius: 10px;
+
+}
+.row{
+	margin: 0 -30px 0 0;
+
+}
+.col-1{
+	margin: 0 30px 0 0;
+	float: left;
+	padding: 0px;
+	width: 296px;
+	height: 496px;
+	background:#64B5F6;
+	border: 2px solid #0B6121;
+	border-radius: 10px; 
+	box-shadow: 10px 10px 5px #888;
+}
+.col-1 h2{
+	margin:17px 0 17px 24px;
+	font-family: Verdana bold;
+	font-size: 18px;
+	color: #ffffff;
+	text-shadow: 1px 1px black;
+
+}
+.col-1 p{
+	font-family: Verdana;
+	font-size: 14px;
+	color: #000000;
+	text-align: justify;
+	margin: 0 24px 0 24px;	
+}
+.footer ul{
+	overflow: hidden;
+	margin: 0px;
+	padding left: 50px;
+	list-style: none;
+}
+.footer li{
+	float: right;
+	display: inline-block;
+	margin-right: 0px;
+	padding: 6px;
+}
+.footer p{
+	text-align: center;
+	font-size: 16px;
+	font-family: verdana bold;
+}
+/* propriedade para barra de rolagem
+p{
+	overflow: auto;
+}
+*/
+@media screen and (max-device-width: 450px) {
+	.header{
+		height: 660px;
+	}
+	.menu{
+  		height: 445px;
+	}
+	.menu ul li{
+		float: none;
+		display: block;
+	}
+	.menu ul li a{
+		font-size: 40px;
+		letter-spacing: 5px;
+	}
+	.destaque{
+		display: none;
+	}
+	.col-1{
+		height: 690px;
+	}
+	.col-1 h2{
+		font-size: 28px;
+	}
+	.col-1 p{
+		font-size: 24px;
+	}
+	.conteudo h1{
+		font-size: 30px;
+		width: 960px;
+		height: 55px;
+	}
+	.conteudo h2{
+		font-size: 25px;
+	}
+	.footer p{
+		width: 960px;
+		height: 40px;
+		text-align: center;
+    	font-size: 35px;
+    	font-family: verdana bold;
+	}
+
+}
